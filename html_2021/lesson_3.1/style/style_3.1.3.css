@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 1250px;
+    height: 800px;
+    background: #e4f5f5;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: #e4f5f5;
+}
+
+.wid_1 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+}
+.wid_2{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+.wid_3{
+    flex-grow: 4;
+
+}
+.x{
+    background: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.x:hover{
+    background: #9696ee;
+    border-radius: 2px;
+}
+.xx{
+    margin: 10px;
+}
+.big{
+    width: 350px;
+    background: #4444d7;
+}
