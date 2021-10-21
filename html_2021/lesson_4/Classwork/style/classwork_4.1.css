@@ -126,7 +126,7 @@ body {
     justify-content: space-between;
 }
 
-.line_block_1>div{
+.line_block_1 > div {
     height: 10px;
     width: 70px;
 
@@ -141,7 +141,7 @@ body {
     justify-content: space-between;
 }
 
-.line_block_2>div{
+.line_block_2 > div {
     height: 5px;
     width: 40px;
 
