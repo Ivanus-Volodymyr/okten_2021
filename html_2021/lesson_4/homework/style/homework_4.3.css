@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    flex-direction: column;
+    color: #e2e0e0;
+    row-gap: 10px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #3c3cf5;
+}
+.block:hover{
+    background: #5d74ea;
+}
+.widgets, .big, .contacts {
+    width: 600px;
+}
+
+.widgets {
+    height: 200px;
+}
+
+.big {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.contacts{
+    height: 400px;
+}
+.big .big_widgets{
+    width: 34%;
+    font-size: 20px;
+    background: #2323ee;
+}
+.big .big_widgets:hover{
+    background: #4560ea;;
+}

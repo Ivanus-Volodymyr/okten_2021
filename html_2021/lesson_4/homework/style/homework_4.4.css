@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+.width {
+    width: 600px;
+}
+
+header {
+    background: #2323ee;
+}
+
+nav {
+    height: 50px;
+    background: #5b5bde;
+}
+
+footer {
+    background: #4f4fdb;
+}
+
+header, footer {
+    height: 100px;
+}
+
+.text_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.main {
+    flex-grow: 4;
+    background: #64afe5;
+}
+
+.aside {
+    flex-grow: 1;
+    background: #3c3cf5;
+}

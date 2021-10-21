@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 40px;
+    border-radius: 5px;
+    background: #fcefe3;
+}
+
+.block:hover {
+    color: #25618d;
+    background: #e4f5f5;
+    border-radius: 10px;
+    font-size: 38px;
+}
+
+header, footer {
+    width: 100%;
+    height: 110px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    height: 600px;
+    width: 100%;
+}
+
+.main .main_menu {
+    flex-grow: 2;
+}
+
+.main .main_post {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    flex-grow: 7;
+}
+
+.main .main_post .post {
+    height: 50%;
+}

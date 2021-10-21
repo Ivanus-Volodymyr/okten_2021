@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
     font-size: 25px;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,33 +11,38 @@ header{
     height: 80px;
     background: #4b4bf1;
 }
-nav{
-     display: flex;
-     justify-content: center;
-     height: 50px;
-     background: #2323ee;
-     align-items: center;
- }
-.main{
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background: #2323ee;
+    align-items: center;
+}
+
+.main {
     display: flex;
     flex-direction: row;
     height: 600px;
     width: 100%;
     background: #7be1f8;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 7;
 }
-aside{
+
+aside {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     background: #5b5bde;
 }
+
 footer {
     display: flex;
     justify-content: center;
