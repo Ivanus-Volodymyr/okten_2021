@@ -1,0 +1,151 @@
+@media screen and (max-width: 576px) {
+    .header_line {
+        justify-content: center;
+        column-gap: 10px;
+        height: 150px;
+    }
+
+    .home {
+        height: 100px;
+    }
+
+    .main_log {
+        height: 300px;
+    }
+
+    .log {
+        justify-content: center;
+        flex-direction: column;
+        height: 200px;
+        row-gap: 40px;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_block_1 {
+        width: 100%;
+        height: auto;
+        row-gap: 30px;
+        border: none;
+    }
+
+    .main_block_2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .main_block_1 > div {
+        margin-top: 40px;
+    }
+
+    .line {
+        flex-grow: 0;
+    }
+
+    .element {
+        flex-grow: 0;
+        row-gap: 30px;
+        flex-direction: column;
+    }
+
+    .element_circle {
+        margin: 20px;
+    }
+
+    .square {
+        width: 380px;
+        height: 200px;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .feedback {
+        width: 100%;
+        height: auto;
+        row-gap: 50px;
+    }
+
+    .feedback_line {
+        margin: 50px;
+    }
+
+    .feedback_column_1 {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .feedback_column_2 {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .choose {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .choose_block {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .choose_block_1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .choose_block_2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .choose_block_1_include {
+        width: 100%;
+        height: auto;
+    }
+
+    .choose_block_1_include_text {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .choose_block_1_include_bottom{
+        justify-content: center;
+    }
+
+    .choose_block_1_include_text > .log_line {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    .footer_box{
+        width: 200px;
+    }
+    .footer_box_square{
+        height: 30px;
+        width: 30px;
+        border-radius: 3px;
+    }
+
+}
