@@ -1,0 +1,97 @@
+@media screen and (max-width: 500px) {
+    .header {
+        background: url("../images/bg.png") no-repeat;
+        height: 1800px;
+    }
+
+    .header_menu {
+        display: none;
+    }
+
+    .burger_button {
+        display: flex;
+    }
+
+    .header_main {
+        margin: 0;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 40px;
+        margin: 95px 10px 10px 10px;
+    }
+
+    .title h2 {
+        font-size: 40px;
+        margin-left: 0;
+    }
+
+    .title h1 {
+        font-size: 80px;
+    }
+
+    .title p {
+        margin: 0;
+    }
+
+    .header_contacts_button {
+        height: 70px;
+        padding: 0 60px;
+        margin-right: 175px;
+    }
+
+    .content_box {
+        align-items: center;
+        flex-direction: column;
+        bottom: -1400px;
+        row-gap: 50px;
+    }
+
+    .history {
+        flex-direction: column;
+        height: auto;
+        row-gap: 50px;
+    }
+
+    .our_history_numbers_1 {
+        font-size: 30px;
+        margin: 0 10px 0 10px;
+    }
+
+    .history_img {
+        width: 260px;
+        height: 301px;
+        margin-right: 100px;
+    }
+
+    .reservation_block {
+        width: 500px;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 50px;
+    }
+
+    .reservation_block_text {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reservation_block_text_h {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .reservation_block_text_p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .reservation_block_button button {
+        margin-right: 0;
+    }
+}
