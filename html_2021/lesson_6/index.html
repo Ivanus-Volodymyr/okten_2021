@@ -8,120 +8,128 @@
     <title>Restaurant</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/lesson_6.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+<div class="container-fluid">
+    <div class="header col-12">
+        <div class="header_top d-flex justify-content-between wrapper ">
+            <div class="header_logo"><img src="images/LOGO.svg" alt="logo"></div>
 
-<div class="header">
-    <div class="header_top wrapper">
-        <div class="header_logo"><img src="images/LOGO.svg" alt="logo"></div>
 
-
-        <div class="header_menu">
-            <nav>
-                <div class="menu">
-                    <div class="menu_item"><a href="#">ГЛАВНАЯ</a></div>
-                    <div class="menu_item"><a href="#">МЕНЮ</a></div>
-                    <div class="menu_item"><a href="#">О НАС</a></div>
-                    <div class="menu_item"><a href="#">БРОНЬ</a></div>
-                    <div class="menu_item"><a href="#"><img src="images/shopping-cart-solid.svg" alt="shopping"></a>
+            <div class="header_menu d-flex align-items-center ">
+                <nav>
+                    <div class="menu d-flex flex-row align-items-center">
+                        <div class="menu_item"><a href="#">ГЛАВНАЯ</a></div>
+                        <div class="menu_item"><a href="#">МЕНЮ</a></div>
+                        <div class="menu_item"><a href="#">О НАС</a></div>
+                        <div class="menu_item"><a href="#">БРОНЬ</a></div>
+                        <div class="menu_item"><a href="#"><img src="images/shopping-cart-solid.svg" alt="shopping"></a>
+                        </div>
                     </div>
+                </nav>
+                <div class="header_contacts d-flex flex-row align-items-center">
+                    <div class="header_contacts_phone">
+                        <img src="images/phone.png" alt="Phone"> +999-888-76-54
+                        <p>Свяжитесь с нами для бронирования</p>
+                    </div>
+
+                    <button class="header_contacts_button">ЗАКАЗ СТОЛИКА</button>
                 </div>
-            </nav>
-            <div class="header_contacts">
-                <div class="header_contacts_phone">
-                    <img src="images/phone.png" alt="Phone"> +999-888-76-54
-                    <p>Свяжитесь с нами для бронирования</p>
+            </div>
+            <div class="burger_button  flex-column">
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+            </div>
+        </div>
+
+        <div class="header_main">
+            <div class="title">
+                <h2>Добро пожаловать в</h2>
+                <h1>Наш ресторан</h1>
+                <p class="d-flex align-items-center">ДОМ ЛУЧШЕЙ ЕДЫ</p>
+                <button class="header_contacts_button">VIEW MENU</button>
+            </div>
+        </div>
+
+        <div class="history_box col-12 d-lex align-items-center justify-content-center position-relative">
+
+            <div class="content_box col-12 d-md-flex flex-row justify-content-center position-absolute">
+
+                <div class="box col-11 d-flex align-items-center flex-column">
+                    <div class="dish"></div>
+                    <h3>Магическая <span>Атмосфера</span></h3>
+                    <div class="dish_p_text d-block text-center"><p>В нашем заведении царит магическая атмосфера наполненная вкусными
+                        ароматами</p></div>
                 </div>
 
+                <div class="box col-11 d-flex align-items-center flex-column">
+                    <div class="dish"></div>
+                    <h3>Лучшее качество <span>Еды</span></h3>
+                    <div class="dish_p_text d-block text-center"><p>Качество нашей Еды - отменное!</p></div>
+                </div>
+
+                <div class="box col-11 d-flex align-items-center flex-column">
+                    <div class="dish"></div>
+                    <h3>Недорогая <span>Еда</span></h3>
+                    <div class="dish_p_text d-block text-center"><p>Стоимость нашей Еды зависит только от ее количества. Качество всегда на
+                        высоте!</p></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="history d-md-flex flex-row col-12 align-items-center justify-content-center">
+        <div class="our_history d-flex flex-column">
+            <div class="our_history_text d-flex flex-column align-items-center justify-content-center">
+                <div class="our_history_text_h">Наша <span>История</span></div>
+                <div class="our_history_text_p col-12 text-center">Как и у любого другого самобытного места, у нас есть своя, особая
+                    история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего
+                    ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи
+                    им
+                    пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.
+                </div>
+            </div>
+
+            <div class="our_history_numbers d-flex flex-row justify-content-between">
+                <div class="our_history_numbers_1 d-flex flex-column justify-content-between align-items-center text-center">93
+                    <p>Напитки</p>
+                </div>
+                <div class="our_history_numbers_1 d-flex flex-column justify-content-between align-items-center text-center">206
+                    <p>Еда</p>
+                </div>
+                <div class="our_history_numbers_1 d-flex flex-column justify-content-between align-items-center text-center">71
+                    <p>Закуски</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="history_img d-flex"><img src="images/images_group.png" alt=""></div>
+    </div>
+
+    <div class="reservation d-flex align-items-center justify-content-center col-12">
+        <div class="reservation_block d-flex align-items-center justify-content-between">
+            <div class="reservation_block_text d-flex flex-column text-center">
+                <div class="reservation_block_text_h col-12 ">
+                    <p>Отпразднуйте в одном из самых лучших ресторанов.</p>
+                </div>
+                <div class="reservation_block_text_p col-12">
+                    <p>Только в этом месяце бизнес-ланч от 250 ₽</p>
+                </div>
+            </div>
+            <div class="reservation_block_button">
                 <button class="header_contacts_button">ЗАКАЗ СТОЛИКА</button>
             </div>
         </div>
-        <div class="burger_button">
-            <div class="burger_line"></div>
-            <div class="burger_line"></div>
-            <div class="burger_line"></div>
-        </div>
-    </div>
-
-    <div class="header_main">
-        <div class="title">
-            <h2>Добро пожаловать в</h2>
-            <h1>Наш ресторан</h1>
-            <p>ДОМ ЛУЧШЕЙ ЕДЫ</p>
-            <button class="header_contacts_button">VIEW MENU</button>
-        </div>
-    </div>
-
-    <div class="history_box">
-        <div class="content_box">
-            <div class="box">
-                <div class="dish"></div>
-                <h3>Магическая <span>Атмосфера</span></h3>
-                <div class="dish_p_text"><p>В нашем заведении царит магическая атмосфера наполненная вкусными
-                    ароматами</p></div>
-            </div>
-            <div class="box">
-                <div class="dish"></div>
-                <h3>Лучшее качество <span>Еды</span></h3>
-                <div class="dish_p_text"><p>Качество нашей Еды - отменное!</p></div>
-            </div>
-            <div class="box">
-                <div class="dish"></div>
-                <h3>Недорогая <span>Еда</span></h3>
-                <div class="dish_p_text"><p>Стоимость нашей Еды зависит только от ее количества. Качество всегда на
-                    высоте!</p></div>
-            </div>
-
-        </div>
     </div>
 </div>
-
-<div class="history">
-    <div class="our_history">
-        <div class="our_history_text">
-            <div class="our_history_text_h">Наша <span>История</span></div>
-            <div class="our_history_text_p">Как и у любого другого самобытного места, у нас есть своя, особая
-                история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего
-                ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им
-                пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.
-            </div>
-        </div>
-
-        <div class="our_history_numbers">
-            <div class="our_history_numbers_1">93
-                <p>Напитки</p>
-            </div>
-            <div class="our_history_numbers_1">206
-                <p>Еда</p>
-            </div>
-            <div class="our_history_numbers_1">71
-                <p>Закуски</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="history_img"><img src="images/images_group.png" alt=""></div>
-</div>
-
-<div class="reservation">
-    <div class="reservation_block">
-        <div class="reservation_block_text">
-            <div class="reservation_block_text_h">
-                <p>Отпразднуйте в одном из самых лучших ресторанов.</p>
-            </div>
-            <div class="reservation_block_text_p">
-                <p>Только в этом месяце бизнес-ланч от 250 ₽</p>
-            </div>
-        </div>
-        <div class="reservation_block_button">
-            <button class="header_contacts_button">ЗАКАЗ СТОЛИКА</button>
-        </div>
-    </div>
-</div>
-
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
