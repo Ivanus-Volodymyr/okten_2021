@@ -1,0 +1,359 @@
+.navbar-expand-lg .navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-item .nav-link {
+    border: 2px solid transparent;
+    color: #EAEDF5;
+}
+
+.navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+    color: #45494F;
+    border: 2px solid #EAEDF5;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.first-screen-left {
+    padding-top: 50px;
+}
+
+.first-screen-left h2 {
+    height: 100px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.4px;
+    color: #1652AC;
+    margin-bottom: 12.5rem;
+}
+
+.first-screen-left p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #020303;
+    margin-top: 70px;
+}
+
+.first-screen-left p::before,
+.first-screen-left p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 223px;
+    height: 7px;
+    background-color: #EDEFF3;
+}
+.first-screen-right-img{
+    display: none;
+}
+
+.first-screen-left p::before {
+    margin-top: -55px;
+}
+
+.first-screen-left p::after {
+    margin-top: 55px;
+}
+
+.second-screen-right h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 7px;
+    color: #1652AC;
+}
+
+.second-screen-right p {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    color: #45494F;
+}
+
+.third-screen-right {
+    padding-left: 150px;
+    background: linear-gradient(180deg, #163DA2 0%, #003584 100%);
+}
+
+.text {
+    display: block;
+    width: 500px;
+}
+
+.third-screen-right h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 4px;
+    color: #FBFDFF;
+}
+
+.third-screen-right p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #FBFDFF;
+}
+
+.fourth {
+    margin-top: 100px;
+    height: 500px;
+}
+
+.fourth-screen-right {
+    background: url("../images/IconHotToCold 1.png") no-repeat center/cover;
+}
+
+.fourth-screen-left h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #1652AC;
+    margin-top: 100px;
+}
+
+.fourth-screen-left p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #45494F;
+    margin-top: 50px;
+}
+
+.second-screen-main .container {
+    background: #FBFBFC;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.second-screen-main .container h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    color: #020303;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.property-box {
+    width: 300px;
+    height: 90px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.property-box-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #45494F;
+    margin-left: 20px;
+}
+
+.third-screen-main .container {
+    background: #FBFBFC;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+.hauptmerkmale-block {
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hauptmerkmale-block h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    color: #020303
+}
+
+.list {
+    padding: 10px;
+}
+
+.list li {
+    list-style: none;
+}
+
+.list ul {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 55px;
+    letter-spacing: -0.4px;
+    color: rgba(17, 12, 12, 0.84);
+}
+
+.list ul span {
+    color: #151515;
+    font-weight: bold;
+}
+
+.fourth-screen-main .container {
+    background: #FBFBFC;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.bilder-scroll-button {
+    width: 106px;
+    height: 58px;
+    background: #FFFFFF;
+    box-shadow: 0 0 21px rgba(64, 68, 75, 0.14);
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.bilder-scroll .scroll-3 {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.besucher-h {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 2.42px;
+    color: #020303;
+}
+
+.besucher-button-1 {
+    width: 350px;
+    height: 60px;
+    background: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+    border-radius: 12px;
+    margin: 10px;
+
+}
+
+.besucher-button-1 p {
+    height: 100%;
+    width: auto;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #FAFBFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-column-1-h h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: -0.4px;
+    color: #1652AC;
+}
+
+.row-column-2-button {
+    width: 300px;
+    height: 60px;
+    background: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px rgba(48, 67, 133, 0.5);
+    border-radius: 12px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.row-column-2-button p {
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-column-2-button p::before {
+    content: "";
+    position: absolute;
+    margin-left: -112px;
+    width: 75px;
+    height: 12px;
+    background: url("../images/icon/Arrow 4.png") no-repeat center/cover;
+}
+
+.row-column-2-p p {
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #464C53;
+}
+
+.row-column-2-p span {
+    color: #01019c;
+    font-weight: bold;
+}
+
+.fifth-screen-main .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 2px solid #EEF0F4;
+    border-bottom: 2px solid #EEF0F4;
+}
+
+.contact li {
+    list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #9EABBB;
+}
+
+.contact li > span {
+    color: #01019c;
+    font-weight: bold;
+}
+
+.l {
+    color: black;
+}
+
+.contact a {
+    color: #9EABBB;
+}
+
+.contact ul {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #98a0ac;
+}
+
+.contact {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+}

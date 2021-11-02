@@ -1,0 +1,128 @@
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .first-screen-left {
+        padding-top: 0;
+    }
+
+    .container .row {
+        flex-direction: column;
+    }
+
+    .main-row .row {
+        margin-top: 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .first-screen-right-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first-screen-right-img::before {
+        content: "";
+        display: block;
+        align-items: center;
+        position: absolute;
+        width: 300px;
+        height: 7px;
+        background-color: #EDEFF3;
+        margin-top: -300px;
+
+    }
+
+    .first-screen-left p::before,
+    .first-screen-left p::after {
+        content: "";
+        display: none;
+    }
+
+    .first-screen-right {
+        display: none;
+    }
+
+    .third-screen-left, .third-screen-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .third-screen-left img {
+        display: flex;
+        width: 530px;
+    }
+
+    .second-screen-left img {
+        display: flex;
+        width: 530px;
+    }
+
+    .first-screen-right-img img {
+        display: flex;
+        width: 530px;
+    }
+
+    .property .h2 {
+        margin: 40px 0 30px 0;
+    }
+
+    .property-box {
+        margin-top: 20px;
+    }
+
+    .text {
+        margin-left: -100px;
+        width: 400px;
+    }
+
+    .bilder-img img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .bilder .bilder-scroll {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .besucher-button {
+        margin-top: 30px;
+    }
+
+    .besucher-button-1 {
+        margin-top: 30px;
+    }
+
+    .besucher-button .row {
+        margin-top: 0;
+    }
+
+    .fifth-screen-main .container{
+        margin-top: 0;
+    }
+    .row-column{
+        row-gap: 50px;
+    }
+    .row-column-2-button{
+        margin-left: 80px;
+    }
+    .container .contact{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 30px;
+    }
+
+}
