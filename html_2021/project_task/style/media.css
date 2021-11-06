@@ -1,0 +1,104 @@
+@media screen and (max-width: 576px) {
+    .dropdown-main {
+        display: none
+    }
+
+    .dropdown-more {
+        display: flex;
+    }
+
+    .menu-main {
+        display: none;
+    }
+
+    .info-time-location {
+        display: none;
+    }
+
+    .info-phone .info {
+        height: auto;
+    }
+
+    .info-sms-phone {
+        row-gap: 2px;
+        height: 130px;
+    }
+
+    .home-block {
+        display: flex;
+    }
+
+    .sms-p p {
+        text-align: center;
+    }
+
+    .logo-first {
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    .logo-first-group .btn-primary {
+        width: 50px;
+        background: url("../images/logo/f-2.png") no-repeat center/cover;
+    }
+
+    .input-group {
+        width: 266px;
+    }
+
+    .logo .btn-success {
+        width: 70px;
+    }
+
+    .login-group {
+        display: none;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .action-block-main {
+        margin-top: 20px;
+    }
+
+    .carousel-block-second-main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel-block-second-main .carousel-inner {
+        width: 340px;
+    }
+
+    .carousel-item-block {
+        width: 335px;
+    }
+
+    .carousel-item-block-text {
+        padding: 10px;
+    }
+
+    .carousel-item-block-main-little {
+        display: none;
+    }
+
+    .footer-main {
+        row-gap: 40px;
+    }
+
+    .footer-h {
+        margin-top: 25px;
+        align-items: center;
+    }
+
+    .product-card {
+        margin-top: 25px;
+        border: 1px solid #c2c0c0;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+}
