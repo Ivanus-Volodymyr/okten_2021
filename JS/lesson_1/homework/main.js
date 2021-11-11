@@ -1,160 +1,159 @@
 // // Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
-//     // Вивести кожну змінну за допомогою: console.log , alert, document.write
+// // Вивести кожну змінну за допомогою: console.log , alert, document.write
 // let hello = 'hello';
 // console.log(hello);
 // alert(hello);
-// document.write('hello');
+// document.write(hello);
 //
-// hello = ('okten');          // - Переприсвоїти кожній змінній з завдання значення на довільне.
+// hello = 'okten';          // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(hello);
 // alert(hello);
-// document.write('.okten');
+// document.write(hello);
 //
 //
 //
 // let owu = 'owu';
 // console.log(owu);
 // alert(owu);
-// document.write('.owu')
+// document.write(owu)
 //
 // owu = 'owu1';               // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(owu);
 // alert(owu);
-// document.write('.owu1');
+// document.write(owu);
 //
 //
 //
 // let com = 'com';
 // console.log(com)
 // alert(com);
-// document.write('.com')
+// document.write(com)
 //
 // com = '.com1';                // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(com);
 // alert(com);
-// document.write('.com1')
+// document.write(com)
 //
 //
 //
 // let ua = 'ua';
 // console.log(ua);
 // alert(ua);
-// document.write('ua');
+// document.write(ua);
 //
 // ua = '.ua1'                  // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(ua);
 // alert(ua)
-// document.write('.ua1')
+// document.write(ua)
 //
 //
 //
 // let n = 1;
 // console.log(n);
 // alert(n);
-// document.write('1');
+// document.write(n);
 //
 // n = 2;                      // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(n);
 // alert(n);
-// document.write('2')
+// document.write(n)
 //
 //
 //
 // let u = 10;
 // console.log(u);
 // alert(u);
-// document.write('10');
+// document.write(u);
 //
 // u = 11;                      // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(u);
 // alert(u);
-// document.write('11');
+// document.write(u);
 //
 //
 //
 // let m = -999;
 // console.log(m);
 // alert(m);
-// document.write('-999');
+// document.write(m);
 //
 // m = -1000;                   // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(m);
 // alert(m);
-// document.write('-1000');
+// document.write(m);
 //
 //
 //
 // let b = 123;
 // console.log(b);
 // alert(b);
-// document.write('123');
+// document.write(b);
 //
 // b = 124;                      // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(b);
 // alert(b);
-// document.write('124')
+// document.write(b)
 //
 //
 //
 // let PI = 3.14;
 // console.log(PI);
 // alert(PI);
-// document.write('3.14');
+// document.write(PI);
 //
 // PI = 'constanta';             // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(PI);
 // alert(PI);
-// document.write('constanta');
+// document.write(PI);
 //
 //
 //
 // let e = 2.7;
 // console.log(e);
 // alert(e);
-// document.write('2.7');
+// document.write(e);
 //
 // e = 2.8;                      // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(e);
 // alert(e);
-// document.write('2.8');
+// document.write(e);
 //
 //
 //
 // let r = 16;
 // console.log(r);
 // alert(r);
-// document.write('16');
+// document.write(r);
 //
 // r = 17;                      // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(r);
 // alert(r);
-// document.write('17');
+// document.write(r);
 //
 //
 //
 //
-// let boolean1 = 'true';
+// let boolean1 = true;
 // console.log(boolean1);
 // alert(boolean1);
-// document.write('true');
+// document.write(boolean1);
 //
 // boolean1 = 'tru is true';   // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(boolean1);
 // alert(boolean1);
-// document.write('true is true');
+// document.write(boolean1);
 //
 //
 //
-// let boolean2 = 'false';
+// let boolean2 = false;
 // console.log(boolean2);
 // alert(boolean2);
-// document.write('false');
+// document.write(boolean2);
 //
 // boolean2 = 'false is false';  // - Переприсвоїти кожній змінній з завдання значення на довільне.
 // console.log(boolean2);
 // alert(boolean2);
-// document.write('false is false');
-//
+// document.write(boolean2);
 
 
 // //- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
@@ -166,25 +165,17 @@
 // let lastName = 'Mykolayovych';
 //
 // // - З'єднати їх в одну змінну person. (Не об'єкт)
-//
-// let person = {
-//     firstName: 'Ivanus',
-//     middleName: 'Volodymyr',
-//     lastName: 'Mykolayovych'
-// }
-
+// let p = ' ';
+// let person = firstName + p + middleName + p + lastName;
+// console.log(person);
 
 // // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років"
 //
 //
-// let firstName = prompt('Вітаю Володимир');
-// console.log(firstName);
-//
-// let lastName = prompt('Миколайович');
-// console.log(lastName);
-//
-// let age = prompt('Тобі 18 =)');
-// console.log(age);
+// let firstName = prompt('Імя');
+// let lastName = prompt('По батькові');
+// let age = prompt('Вік');
+// console.log('Вітаю' + ' ' + firstName + ' ' + lastName + ' ' + '.' + ' '+'Тобі' + ' ' + age + ' ' + 'років');
 
 
 // //- За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.

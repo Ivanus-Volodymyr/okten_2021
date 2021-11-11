@@ -29,16 +29,20 @@
 <script>
     let a = 100;
     let b = 500;
+    console.log(b);
     let c = "hello";
     let d = "okten";
+    let x = 'constant value';
+    console.log(x);
+    {
+        console.log(a);
+        x = 'new value';
+    }
+    b = 'new value';
+    let result = 100 + a;
 
-    const x = 'constant value';
-    console.log(a);
-
-    let result1 = a + b;
-    console.log(result1);
-    let result2 = c + d;
-    console.log(result2);
+    console.log(result);
+    console.log(c + ' ' + " " + d)
 </script>
 
 </body>
