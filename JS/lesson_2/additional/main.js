@@ -3,9 +3,9 @@
 //  Інакше слід вивести на екран повідомлення про те, що це маленький масив, в якому менше 3-х елементів.
 
 let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
-if (friends.length>=3){
+if (friends.length >= 3) {
     console.log('це великий масив, в якому  3 і більше елементи.')
-}else if (friends.length<3){
+} else if (friends.length < 3) {
     console.log('це маленький масив, в якому менше 3-х елементів.')
 }
 
@@ -19,18 +19,19 @@ if ((a > b && a < c) || (a > c && a < b)) {
     console.log(a)
 } else if ((b > a && b < c) || (b > c && b < a)) {
     console.log(b)
-} else if ((c > b && c < a) || (c < b && c > a)){
+} else if ((c > b && c < a) || (c < b && c > a)) {
     console.log(c)
 }
 
 //- Перепишіть конструкцію if з використанням умовного оператора '?'
-     // let result;
-     //  if (a + b < 4) {
-     //     result = 'Мало';
-     //  } else {
-     //     result = 'Багато';
-     //  }
-let result = q + w < 4 ? 'Мало' : 'Багато';
+// let result;
+//  if (a + b < 4) {
+//     result = 'Мало';
+//  } else {
+//     result = 'Багато';
+//  }
+
+let result = a + b < 4 ? 'Мало' : 'Багато';
 
 // - Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
 // напишіть це тернарним оператором
