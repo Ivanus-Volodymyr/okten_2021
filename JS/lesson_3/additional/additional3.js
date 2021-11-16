@@ -25,7 +25,8 @@ let arr = [];
 
 //d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
 for (let i = 0; i < 20; i++) {
-    let randomFloat = (min =8, max=732) => Math.random() * (max - min) + min;
-    arr[i]=randomFloat()
+    let x = Math.floor(Math.random() * (732 - 8) + 8);
+    arr.push(x)
+    // arr[i] = x;
 }
 console.log(arr)
