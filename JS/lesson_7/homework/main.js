@@ -46,6 +46,7 @@ class Client {
     }
 }
 
+
 let client1 = new Client(1, 'alan', 'ivanov', 'ivan@gmail.com', '0987621122', ['goods']);
 let client2 = new Client(2, 'alex', 'ivanov', 'ivan@gmail.com', '0987621122', ['goods', 'goods', 'goods', 'goods', 'goods', 'goods']);
 let client3 = new Client(3, 'ben', 'ivanov', 'ivan@gmail.com', '0987621122', ['goods', 'goods']);
