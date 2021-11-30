@@ -1,6 +1,10 @@
 // Взяти файл template_2.html та працювати в ньому
 // 1) Напишіть код, який :
 // a) змінює колір тексту елемнту з ід main_header на назву групи в якій ви вчитесь (mon-year)
+let elementById = document.getElementById('main_header');
+elementById.classList.add('sep-2021');
+elementById.style.color ='red';
+
 // b) робить шириниу елементу ul 400px
 let elementsByTagNameUl = document.body.getElementsByTagName('ul');
 for (const ByTagNameUlElement of elementsByTagNameUl) {
