@@ -1,16 +1,28 @@
 //написати рекурсивну функцію, яка збирає всі назви класів з файлу rules.html в окремий масив. масив вивести в консоль
 //
 //
-// function rec(start) {
-//     let ruleMas = [];
-//     for (const startElement of start.children) {
-//         if (startElement.children) {
-//            ruleMas.push(...rec(start.children))
-//         }
-//         ruleMas.push(...startElement.children)
-//     }
-//     console.log(ruleMas)
-//
-//
-// }
-// rec(document.body)
+let mAs = [];
+for (const child of document.body.children) {
+    for (const childElement of child.children) {
+        mAs.push(...childElement.classList)
+    }
+}
+console.log(mAs);
+
+
+
+function rec(start) {
+    let mas = [];
+    if (start.children) {
+        for (const element of start.children) {
+            mas.push(...element.classList);
+            rec(element);
+        }
+    }mas.push()
+    console.log(mas)
+}
+
+rec(document.body);
+
+
+
