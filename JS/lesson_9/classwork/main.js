@@ -146,34 +146,34 @@ let coursesArray = [
     }
 ];
 
-//Створити для кожного елементу масиву свій блок, блок розділити блоками,
-// в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
-// Приклад структири знаходиться у файлі example.png
-
-for (const element of coursesArray) {
-    let divElementMain = document.createElement('div');
-    let title = document.createElement('div');
-    title.innerText = `${element.title}`;
-    let monthDuration = document.createElement('div');
-    monthDuration.innerText =`${element.monthDuration}`;
-    let hourDuration = document.createElement('div');
-    hourDuration.innerText = `${element.hourDuration}`;
-    let modulesMain = document.createElement('div');
-    let ulElement = document.createElement('ul');
-
-    for (const liElement of element.modules) {
-        let liElementLittle = document.createElement('li');
-        liElementLittle.innerText = liElement;
-
-        ulElement.appendChild(liElementLittle)
-        modulesMain.appendChild(ulElement);
-    }
-
-
-    divElementMain.appendChild(title);
-    divElementMain.appendChild(monthDuration);
-    divElementMain.appendChild(hourDuration);
-    divElementMain.appendChild(modulesMain);
-    modulesMain.appendChild(ulElement)
-    document.body.appendChild(divElementMain);
-}
+// //Створити для кожного елементу масиву свій блок, блок розділити блоками,
+// // в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
+// // Приклад структири знаходиться у файлі example.png
+//
+// for (const element of coursesArray) {
+//     let divElementMain = document.createElement('div');
+//     let title = document.createElement('div');
+//     title.innerText = `${element.title}`;
+//     let monthDuration = document.createElement('div');
+//     monthDuration.innerText =`${element.monthDuration}`;
+//     let hourDuration = document.createElement('div');
+//     hourDuration.innerText = `${element.hourDuration}`;
+//     let modulesMain = document.createElement('div');
+//     let ulElement = document.createElement('ul');
+//
+//     for (const liElement of element.modules) {
+//         let liElementLittle = document.createElement('li');
+//         liElementLittle.innerText = liElement;
+//
+//         ulElement.appendChild(liElementLittle)
+//         modulesMain.appendChild(ulElement);
+//     }
+//
+//
+//     divElementMain.appendChild(title);
+//     divElementMain.appendChild(monthDuration);
+//     divElementMain.appendChild(hourDuration);
+//     divElementMain.appendChild(modulesMain);
+//     modulesMain.appendChild(ulElement)
+//     document.body.appendChild(divElementMain);
+// }
