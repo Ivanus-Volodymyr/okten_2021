@@ -1,29 +1,41 @@
 // //- Создать произвольный елемент с id = text.  Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
-// let elementById = document.getElementById('text');
-// let button = document.getElementById('button');
-// button.onclick = function () {
-//     elementById.style.display = 'none';
+// let paragraphElement = document.createElement('p');
+// paragraphElement.id = 'text';
+// paragraphElement.innerText = 'hello, my name is qwerty';
+// let buttonElement = document.createElement('button');
+// buttonElement.innerText = 'qwerty button';
+// buttonElement.onclick = function (){
+//     paragraphElement.style.display = 'none';
 // }
-
+// document.body.append(paragraphElement,buttonElement);
 
 // // - Создайте кнопку, при клике на которую, она будет скрывать сама себя.
-// let buttonByClassName = document.getElementsByClassName('button');
-// buttonByClassName[0].onclick = function () {
-//     buttonByClassName[0].style.display = 'none';
+// let buttonElement = document.createElement('button');
+// buttonElement.innerText = 'button inner text';
+// buttonElement.onclick = function (){
+//     buttonElement.style.display = 'none';
 // }
+// document.body.append(buttonElement);
 
 // // - створити інпут який приймає вік людини та кнопку яка підтверджує дію.
 // // При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
-// let form = document.forms.form1;
-// form.onsubmit = function (e) {
+// let formElement = document.createElement('form');
+// let inputElement = document.createElement('input');
+// inputElement.type = 'number';
+// inputElement.name  ='age';
+// let buttonElement = document.createElement('button');
+// buttonElement.innerText = 'Submit';
+// formElement.onsubmit = function (e) {
 //     e.preventDefault();
 //     let age = this.age.value;
 //     if (age < 18) {
-//         console.log('Вік менше 18')
+//         console.log('Вік менше 18');
 //     }else {
-//         document.write(age)
+//         document.write(age);
 //     }
 // }
+// formElement.append(inputElement,buttonElement);
+// document.body.append(formElement);
 
 // // - Создайте меню, которое раскрывается/сворачивается при клике
 // let mas = ['Main', 'About', 'Menu', 'Contact', 'Phone']
