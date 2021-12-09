@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+    let a = localStorage.getItem('user');
+    let parse = JSON.parse(a);
+    for (const parseElement of parse) {
+        let divElement = document.createElement('div');
+        let elementName = document.createElement('div')
+        elementName.innerText = parseElement.name;
+        let elementAge = document.createElement('div');
+        elementAge.innerText = parseElement.age;
+        let elementStatus = document.createElement('div');
+        elementStatus.innerText = parseElement.status;
+
+
+        divElement.append(elementName, elementAge, elementStatus,);
+        divElement.classList.add('mainBlock');
+        document.body.append(divElement);
+    }
+
+
+</script>
+</body>
+</html>
