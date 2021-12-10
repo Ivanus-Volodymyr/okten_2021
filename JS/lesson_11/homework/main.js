@@ -37,22 +37,16 @@ volume.placeholder = 'volume';
 let buttonElement = document.createElement('button');
 buttonElement.innerText = 'Submit';
 
-let result = [];
-let stringify = JSON.stringify(result);
-localStorage.setItem('car', stringify);
-
 buttonElement.addEventListener('click', function (e) {
     e.preventDefault();
-    let item = localStorage.getItem('car');
-    let parse = JSON.parse(item);
-    parse.push({model: model.value, type: type.value, volume: volume.value});
-    localStorage.setItem('car', JSON.stringify(parse));
+    let mas = JSON.parse(localStorage.getItem('car')) || [];
+    mas.push({model: model.value, type: type.value, volume: volume.value});
+    localStorage.setItem('car', JSON.stringify(mas));
     model.value = '';
     type.value = '';
     volume.value = '';
-    return result;
-});
 
+});
 
 formElement.append(model, type, volume, buttonElement);
 divElement.appendChild(formElement);
