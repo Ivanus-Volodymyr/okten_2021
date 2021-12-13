@@ -27,42 +27,35 @@
 //         document.body.appendChild(mainDiv)
 //     })
 
-// {
-//     "postId": 1,
-//     "id": 4,
-//     "name": "alias odio sit",
-//     "email": "Lew@alysha.tv",
-//     "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
-//   },
-// 2.
-// Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті.
-// Для кожного елементу свій блок div.comment
-// Всі характеристики повинні мати свої блоки всередені div.comment
-// https://jsonplaceholder.typicode.com/comments
-fetch('https://jsonplaceholder.typicode.com/comments')
-    .then(response => response.json())
-    .then(user => {
-        let divElement = document.createElement('div');
-        for (const element of user) {
-            let block = document.createElement('div');
-            block.classList.add('block')
-            let postId = document.createElement('div');
-            postId.innerText = element.postId;
-            let id = document.createElement('div');
-            id.innerText = element.id;
-            let name = document.createElement('div');
-            name.innerText = element.name;
-            let email = document.createElement('div');
-            email.innerText = element.email;
-            let body = document.createElement('p');
-            body.innerText = element.body
-
-
-            block.append(postId,id,name,email,body);
-            divElement.append(block);
-            block.classList.add('comments')
-        }
-        divElement.classList.add('mainDivTack2');
-        document.body.append(divElement);
-
-    });
+// // 2.
+// // Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті.
+// // Для кожного елементу свій блок div.comment
+// // Всі характеристики повинні мати свої блоки всередені div.comment
+// // https://jsonplaceholder.typicode.com/comments
+// fetch('https://jsonplaceholder.typicode.com/comments')
+//     .then(response => response.json())
+//     .then(user => {
+//         let divElement = document.createElement('div');
+//         for (const element of user) {
+//             let block = document.createElement('div');
+//             block.classList.add('block')
+//             let postId = document.createElement('div');
+//             postId.innerText = element.postId;
+//             let id = document.createElement('div');
+//             id.innerText = element.id;
+//             let name = document.createElement('div');
+//             name.innerText = element.name;
+//             let email = document.createElement('div');
+//             email.innerText = element.email;
+//             let body = document.createElement('p');
+//             body.innerText = element.body
+//
+//
+//             block.append(postId,id,name,email,body);
+//             divElement.append(block);
+//             block.classList.add('comments')
+//         }
+//         divElement.classList.add('mainDivTack2');
+//         document.body.append(divElement);
+//
+//     });
