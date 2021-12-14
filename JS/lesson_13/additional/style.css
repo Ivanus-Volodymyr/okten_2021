@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 200px;
+}
+input{
+    margin: 10px;
+}
+.link_button{
+    margin-top: 100px;
+    width: 100px;
+}
+.basket_main{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    border: 1px solid red;
+    justify-content: space-around;
+    padding: 50px;
+    position: relative;
+}
+.basket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.img{
+    width: 250px;
+    height: 250px;
+}
+.basket_button{
+    padding: 10px;
+    margin-top: 20px;
+}
+.remove{
+    position: absolute;
+    margin-left: 2px;
+    margin-top: -12px;
+    padding: 10px;
+
+}
