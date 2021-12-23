@@ -162,6 +162,7 @@ where application.creditstate = 'not returned'
 order by sum asc limit 1;
 
 
+
 -- 25.Знайти кредити, сума яких більша за середнє значення усіх кредитів
 select sum from application
 where sum>(select avg(sum)from application);
