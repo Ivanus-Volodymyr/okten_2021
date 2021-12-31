@@ -1,29 +1,82 @@
-// На странице user-details.html:
-// 4 Вывести всю, без исключения, информацию про объект user на кнопку/ссылку которого был совершен клик ранее.
-// 5 Добавить кнопку "post of current user", при клике на которую, появляются title всех постов текущего юзера
-// (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
-// 6 Каждому посту добавить кнопку/ссылку, при клике на которую происходит переход на страницу post-details.html, которая имеет детальную информацию про текущий пост.
-//
-
-
+let maiOfUser = document.createElement('div');
+maiOfUser.classList.add('userMainBlock');
 let back = document.createElement('div');
 let homeButton = document.createElement('button');
-homeButton.classList.add('home')
+homeButton.classList.add('home');
 let homeLink = document.createElement('a');
-homeLink.href = 'index.html'
+homeLink.href = 'index.html';
 homeLink.innerText = 'Back to User List';
-let linkDiv = document.createElement('div');
-fetch('https://jsonplaceholder.typicode.com/users' + users.id + '/users/id')
-    .then(user => user.json())
-    .then(block => {
-        for (const blockElement of block) {
-            let blockDiv = document.createElement('div');
 
 
+let url = new URL(location.href);
+let idOFUser = url.searchParams.get('id');
+fetch('https://jsonplaceholder.typicode.com/users/' + idOFUser)
+    .then(value => value.json())
+    .then(value => {
+        let blockDiv = document.createElement('div');
+        blockDiv.classList.add('userBlock');
+        let buttonElement = document.createElement('button');
+        buttonElement.classList.add('userButtonPost');
+        buttonElement.innerText = 'posts of current user';
+        blockDiv.innerHTML = `
+            <div>
+            <h3>User name is: <h2>${value.name}</h2></h3>
+            <h3>Username is: ${value.username}</h3> 
+          
+            <h3>User addres is:</h3> 
+            <ul>
+            <li>${value.address.street} street</li>
+            <li>${value.address.suite} suite</li>
+            <li>${value.address.city} city</li>
+            <li>${value.address.zipcode}</li>
+            <li> Geo <ol>
+            <li>lat ${value.address.geo.lat}</li>
+            <li>lng ${value.address.geo.lng}</li>
+            </ol></li>
+            </ul>
+            <h3>Company: </h3>
+            <ul>
+            <li>Name of company: ${value.company.name}</li>
+            <li>CatchPhrase of company: ${value.company.catchPhrase}</li>
+            <li>Bs of company: ${value.company.bs}</li>
+            </ul>
+            <h3>User email is: ${value.email}</h3> 
+            <h3>User phone is: ${value.phone}</h3> 
+            <h3>User website is: ${value.website}</h3> 
+            </div>
+            `
+        buttonElement.onclick = () => {
+            let postBlockMain = document.createElement('div');
+            postBlockMain.classList.add('postBlockMain');
+            fetch('https://jsonplaceholder.typicode.com/users/' + value.id + '/posts')
+                .then(value => value.json())
+                .then(value => {
+                    for (const post of value) {
+                        buttonElement.style.display = 'none';
+                        let postDiv = document.createElement('div');
+                        postDiv.classList.add('postDiv');
+                        postDiv.innerHTML = `
+                        <h3>User post with id ${post.userId}</h3>
+                        <h3>Post title: <p>${post.title}</p></h3>
+                        `
+                        let buttonElementPostDetails = document.createElement('button');
+                        buttonElementPostDetails.classList.add('buttonElementPostDetails');
+                        let linkPostDetails = document.createElement('a');
+                        linkPostDetails.innerHTML = 'details about this post';
+                        linkPostDetails.href = 'post-details.html?id=' + post.id;
+
+                        buttonElementPostDetails.append(linkPostDetails);
+                        postDiv.appendChild(buttonElementPostDetails);
+                        postBlockMain.appendChild(postDiv);
+                    }
+                });
+            blockDiv.appendChild(postBlockMain);
         }
+        blockDiv.append(buttonElement);
+        maiOfUser.append(blockDiv);
     })
 
-
-homeButton.appendChild(homeLink)
-back.appendChild(homeButton)
-document.body.append(back, linkDiv)
+homeButton.appendChild(homeLink);
+back.appendChild(homeButton);
+maiOfUser.append(back);
+document.body.append(maiOfUser);

@@ -1,3 +1,10 @@
+/*// Стилизация проекта -*/
+/*// index.html - все блоки с user - по 2 в ряд. кнопки/ссылки находяться под информацией про user.*/
+/*// user-details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.*/
+/*// блоки с краткой информацией про post - в ряд по 5 объектов.*/
+/*// post-details.html - блок с информацией про пост вверху. Комментарии - по 4 в ряд.*/
+/*// Все без исключения элементы, который характеризируют user,post,comment  визуализировать, так, что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)*/
+
 body {
     display: flex;
     align-items: center;
@@ -43,4 +50,56 @@ a {
 }
 .home{
     padding: 15px 50px 15px 50px;
+    margin: 10px;
+}
+.userMainBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.userBlock, .postBlock{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin-top: 50px;
+    border: 1px solid cornflowerblue;
+    box-shadow: 1px 1px 32px #5e8ad9;
+    border-radius: 20px;
+    padding: 50px;
+}
+.userButtonPost, .postCommentsButton{
+    padding: 10px 3px 10px 3px;
+}
+.buttonElementPostDetails{
+    cursor: pointer;
+    padding: 7px 12px 7px 12px;
+}
+.commentBlock, .postDiv{
+    display: flex;
+    width: 19%;
+    min-height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid cornflowerblue;
+    box-shadow: 1px 1px 32px #5e8ad9;
+    border-radius: 10px;
+    padding: 10px;
+}
+.commentBlock:hover{
+    background: #b6cdf6;
+    cursor: pointer;
+}
+.postDiv:hover{
+    background: #b6cdf6;
+    cursor: pointer;
+}
+.postBlockMain, .commentsBlockMain{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
